@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera with Categories</title>
+  <link rel="stylesheet" href="camera.css" />
+</head>
+<body>
+  <div class="video-wrapper">
+    <video id="video" autoplay muted playsinline></video>
+    
+
+    <!--炎-->
+    <video id="flame" autoplay loop muted playsinline crossorigin="anonymous">
+      <source src="212710_small.mp4" type="video/mp4" />
+    </video>
+    <video id="flame2" autoplay loop muted playsinline crossorigin="anonymous">
+      <source src="212710_small.mp4" type="video/mp4" />
+    </video>
+
+    <!--共通ボタン-->
+    <button id="snap">📸 シャッター</button>
+    <button id="record">● 録画</button>
+
+    <!--カテゴリーボタン-->
+    <div class="category-buttons">
+      <button class="category-btn" data-category="head">🧢 頭</button>
+      <button class="category-btn" data-category="face">🙂 顔</button>
+    </div>
+
+    <!--サブボタン-->
+    <div class="sub-buttons" id="head-buttons">
+      <button id="toggleSanta">🎅サンタ</button>
+      <button id="toggleHalo">😇天使</button>
+      <button id="toggleTuno">😈角</button>
+      <button id="toggleRabbit">🐰ウサギ</button>
+    </div>
+
+    <div class="sub-buttons" id="face-buttons">
+      <button id="toggleFlame">🔥炎</button>
+      <button id="toggleHige">🧔 髭</button>
+      <button id="togglegasmask">🤿ガスマスク</button>
+      <button id="addSunglasses">🕶サングラス</button>
+
+    </div>
+
+
+    <div id="timer" style="display:none;">00:00</div>
+    <div id="face-frame"></div>
+  </div>
+
+  <script src="camera.js"></script>
+</body>
+</html>
